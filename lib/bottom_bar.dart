@@ -37,14 +37,16 @@ class _BottomNavigationState extends State<BottomNavigation> {
           items: [
             CustomNavigationBarItem(icon: Icon(Icons.home_outlined)),
             CustomNavigationBarItem(icon: Icon(Icons.person_2_outlined)),
-            CustomNavigationBarItem(icon: Icon(Icons.shopping_bag_outlined)),
+            CustomNavigationBarItem(icon: Icon(Icons.shopping_cart_outlined)),
             CustomNavigationBarItem(icon: Icon(Icons.menu)),
           ],
           onTap: (i){
             setState(() {
               _selectedIndex=i;
             });
+            
           },
+          currentIndex: _selectedIndex,
           ),
       ),
     );
